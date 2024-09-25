@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #ffd700;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #4b0082;
+    margin-bottom: 20px;
+}
+
+.calculator {
+    background-color: #808080;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+}
+
+.display {
+    background-color: #006400;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    text-align: right;
+    min-height: 100px;
+}
+
+.previous-operation,
+.current-operation {
+    margin: 5px 0;
+}
+
+.keypad {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.key {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.key:hover {
+    background-color: #e0e0e0;
+}
+
+.key.zero {
+    grid-column: span 2;
+}
+
+.key.enter {
+    grid-row: span 2;
+    background-color: #4caf50;
+    color: white;
+}
+
+.key.enter:hover {
+    background-color: #45a049;
+}
+
+.key.blank {
+    visibility: hidden;
+}
